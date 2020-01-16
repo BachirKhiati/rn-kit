@@ -9,7 +9,6 @@ import android.hardware.Camera;
 import android.hardware.SensorManager;
 import androidx.annotation.ColorInt;
 import androidx.annotation.IntRange;
-
 import android.view.Display;
 import android.view.OrientationEventListener;
 import android.view.WindowManager;

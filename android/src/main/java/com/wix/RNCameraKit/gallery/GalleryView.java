@@ -2,11 +2,10 @@ package com.wix.RNCameraKit.gallery;
 
 import android.content.Context;
 import android.graphics.Rect;
-import android.util.Log;
-import android.view.View;
-
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import android.util.Log;
+import android.view.View;
 
 public class GalleryView extends RecyclerView {
 
@@ -17,7 +16,7 @@ public class GalleryView extends RecyclerView {
         }
 
         @Override
-        public void onLayoutChildren(RecyclerView.Recycler recycler, State state) {
+        public void onLayoutChildren(Recycler recycler, State state) {
             try {
                 super.onLayoutChildren(recycler, state);
             } catch (IndexOutOfBoundsException e) {
@@ -64,5 +63,7 @@ public class GalleryView extends RecyclerView {
             setLayoutManager(layoutManager);
         }
     }
+
+
 
 }

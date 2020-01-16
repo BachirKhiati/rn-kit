@@ -9,7 +9,6 @@ import android.graphics.Rect;
 import androidx.annotation.ColorInt;
 import android.view.View;
 
-
 import com.wix.RNCameraKit.R;
 
 public class BarcodeFrame extends View {

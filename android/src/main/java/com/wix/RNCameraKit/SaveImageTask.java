@@ -9,10 +9,9 @@ import android.hardware.Camera;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.provider.MediaStore;
+import androidx.annotation.Nullable;
 import android.util.Log;
 import android.util.Patterns;
-
-import androidx.annotation.Nullable;
 
 import com.drew.imaging.ImageMetadataReader;
 import com.drew.imaging.ImageProcessingException;
@@ -109,7 +108,7 @@ public class SaveImageTask extends AsyncTask<byte[], Void, Void> {
             return null;
         }
 
-        WritableMap imageInfo = saveToCameraRoll ? saveToMediaStore(image) : saveTempImageFile(image);
+        WritableMap imageInfo = saveTempImageFile(image);
         if (imageInfo == null)
             promise.reject("CameraKit", "failed to save image to MediaStore");
         else {
