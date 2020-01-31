@@ -8,11 +8,11 @@ Pod::Spec.new do |s|
   s.summary      = "Advanced native camera and gallery controls and device photos API"
   s.license      = "MIT"
 
-  s.authors      = "Wix"
-  s.homepage     = "https://github.com/wix/react-native-camera-kit"
+  s.authors      = "BachirKhiati"
+  s.homepage     = "https://github.com/BachirKhiati/rn-kit"
   s.platform     = :ios, "10.0"
 
-  s.source       = { :git => "https://github.com/wix/react-native-camera-kit.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/wix/rn-kit.git", :tag => "v#{s.version}" }
   s.source_files  = "ios/lib/**/*.{h,m}"
 
   s.dependency 'React'
