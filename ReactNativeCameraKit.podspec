@@ -10,9 +10,9 @@ Pod::Spec.new do |s|
 
   s.authors      = "BachirKhiati"
   s.homepage     = "https://github.com/BachirKhiati/rn-kit"
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "9.0"
 
-  s.source       = { :git => "https://github.com/wix/rn-kit.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/BachirKhiati/rn-kit.git", :tag => "v#{s.version}" }
   s.source_files  = "ios/lib/**/*.{h,m}"
 
   s.dependency 'React'
